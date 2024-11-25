@@ -1,0 +1,20 @@
+<div class="container my-4 mt-0 pt-5">
+    <div class="row">
+      <div *ngFor="let camara of camaras" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-header text-center">
+            <h5>{{ camara.nombre }}</h5>
+          </div>
+          <div class="card-body text-center">
+            <img 
+              [src]="camara.url" 
+              alt="{{ camara.nombre }}" 
+              class="img-fluid" 
+              style="width: 100%; height: auto;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

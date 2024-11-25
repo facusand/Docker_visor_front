@@ -1,0 +1,5 @@
+:host {
+    background-color: #b63737;
+    display: block; /* Asegúrate de que el componente ocupe espacio */
+    min-height: 100vh; /* Para cubrir toda la altura de la pantalla */
+}

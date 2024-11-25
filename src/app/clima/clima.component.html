@@ -1,0 +1,22 @@
+<div class="container my-4 mt-0 pt-5">
+    <div class="row">
+      <div *ngFor="let clima of climaData" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-header text-center">
+            <h5>{{ clima.name }}, {{ clima.sys.country }}</h5>
+          </div>
+          <div class="card-body text-center">
+            <img 
+              [src]="'http://openweathermap.org/img/wn/' + clima.weather[0].icon + '@2x.png'" 
+              alt="Clima icon" 
+              class="mb-3"
+            >
+            <p><strong>Temperatura:</strong> {{ clima.main.temp }} °C</p>
+            <p><strong>Descripción:</strong> {{ clima.weather[0].description }}</p>
+            <p><strong>Humedad:</strong> {{ clima.main.humidity }} %</p>
+            <p><strong>Viento:</strong> {{ clima.wind.speed }} m/s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

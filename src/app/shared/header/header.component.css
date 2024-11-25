@@ -1,0 +1,11 @@
+.logoSpec{
+    object-fit: cover;
+    height: 5em;
+}
+
+:host {
+    background-color: #891f1f;
+    display: block;
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    height: 100px; /* Puedes ajustar la altura según tus necesidades */
+}
